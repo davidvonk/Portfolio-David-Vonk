@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Fashion</title>
+    <link rel="stylesheet" href="css/reset.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+    <header>
+    <a href="index.html">
+        <div class="logo">David <span class="special-font">Spark</span></div>
+    </a>
+        <div class="dark-mode-toggle" onclick="toggleDarkMode()">
+            ENTER<br>DARK
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+               <li>
+                <a href="index.html" class="Active">Home</a>
+               </li>
+               <li>
+                <a href="index.html#portoo">Portfolio</a>
+               </li>
+               <li>
+                <a href="#cc">Contact</a>
+               </li>
+               <li>
+                <a href="index7.html">About</a>
+               </li>
+               <li>
+                <a href="index6.html">Resume</a>
+               </li>
+               <li>
+                <a href="index.html#vids">Videos</a>
+               </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="titel-prt">
+            <h1 class="ttmargin">Fast Fashion</h1>
+            <p class="xtrmargin">For this project I researched the impact of fast fashion on people and the environment. The central question was: what does cheap clothing actually cost? From water usage and CO2 emissions to working conditions and textile waste, I translated complex data into an interactive multimedia story built in Figma.
+                <br><br>
+                To push myself further I also experimented with AI tools to generate video content. It was a way for me to explore new techniques while making something that actually gets people to think twice before buying their next cheap outfit.
+                <br><br>
+                The project was aimed at young people and social media users who shop online a lot.
+            </p>
+        </div>
+
+        <div class="titel-prt">
+            <h1 class="ttmargin">research</h1>
+            <p class="xtrmargin">Before building anything I researched the key topics around fast fashion. These are the numbers that hit hardest.</p>
+        </div>
+
+        <div class="ff-stats">
+            <div class="ff-stat">
+                <p class="ff-topic">Water</p>
+                <p class="ff-number">2.700L</p>
+                <p class="ff-desc">of water needed to produce just 1 cotton T-shirt</p>
+            </div>
+            <div class="ff-stat">
+                <p class="ff-topic">CO2</p>
+                <p class="ff-number">8-10%</p>
+                <p class="ff-desc">of global CO2 emissions come from the fashion industry</p>
+            </div>
+            <div class="ff-stat">
+                <p class="ff-topic">Working Conditions</p>
+                <p class="ff-number">0,6%</p>
+                <p class="ff-desc">of the selling price goes to the person who made the shirt</p>
+            </div>
+            <div class="ff-stat">
+                <p class="ff-topic">Textile Waste</p>
+                <p class="ff-number">92M ton</p>
+                <p class="ff-desc">of textile waste per year, 85% ends up in landfill or burned</p>
+            </div>
+            <div class="ff-stat">
+                <p class="ff-topic">Production</p>
+                <p class="ff-number">100B+</p>
+                <p class="ff-desc">garments produced worldwide every single year</p>
+            </div>
+            <div class="ff-stat">
+                <p class="ff-topic">Netherlands</p>
+                <p class="ff-number">50</p>
+                <p class="ff-desc">garments per person on average in the Netherlands</p>
+            </div>
+        </div>
+
+        <div class="titel-prt">
+            <h1 class="ttmargin">storyflow</h1>
+            <p class="xtrmargin">The story follows the journey of a piece of clothing from the moment you spot it in the store to where it ends up.</p>
+        </div>
+
+        <div class="ff-flow">
+            <div class="ff-flow-step">
+                <span class="ff-flow-num">01</span>
+                <p class="ff-flow-label">Intro</p>
+                <p class="ff-flow-sub">Introduction to fast fashion and the main question</p>
+            </div>
+            <div class="ff-flow-arrow">&#8594;</div>
+            <div class="ff-flow-step">
+                <span class="ff-flow-num">02</span>
+                <p class="ff-flow-label">Clothing Store</p>
+                <p class="ff-flow-sub">You spot a cheap shirt, how did it end up here?</p>
+            </div>
+            <div class="ff-flow-arrow">&#8594;</div>
+            <div class="ff-flow-step">
+                <span class="ff-flow-num">03</span>
+                <p class="ff-flow-label">Production</p>
+                <p class="ff-flow-sub">Cotton, factories and working conditions</p>
+            </div>
+            <div class="ff-flow-arrow">&#8594;</div>
+            <div class="ff-flow-step">
+                <span class="ff-flow-num">04</span>
+                <p class="ff-flow-label">Transport</p>
+                <p class="ff-flow-sub">From Asia to Europe, CO2 and pollution</p>
+            </div>
+            <div class="ff-flow-arrow">&#8594;</div>
+            <div class="ff-flow-step">
+                <span class="ff-flow-num">05</span>
+                <p class="ff-flow-label">NL Impact</p>
+                <p class="ff-flow-sub">Textile waste, recycling and what actually happens to it</p>
+            </div>
+            <div class="ff-flow-arrow">&#8594;</div>
+            <div class="ff-flow-step">
+                <span class="ff-flow-num">06</span>
+                <p class="ff-flow-label">Conclusion</p>
+                <p class="ff-flow-sub">Back in the store, but now with a different perspective</p>
+            </div>
+        </div>
+
+        <div class="titel-prt">
+            <h1 class="ttmargin">process</h1>
+        </div>
+
+        <div class="ff-process">
+            <div class="ff-process-step">
+                <div class="ff-step-left">
+                    <div class="ff-step-dot"></div>
+                    <div class="ff-step-connector"></div>
+                </div>
+                <div class="ff-process-content">
+                    <h2 class="ff-process-title">Research</h2>
+                    <p>I started by collecting data on water usage, CO2, working conditions, textile waste and the situation in the Netherlands. This became the foundation of the whole story.</p>
+                </div>
+            </div>
+            <div class="ff-process-step">
+                <div class="ff-step-left">
+                    <div class="ff-step-dot"></div>
+                    <div class="ff-step-connector"></div>
+                </div>
+                <div class="ff-process-content">
+                    <h2 class="ff-process-title">Storymap V1</h2>
+                    <p>The first version was a straight linear flow, step by step from ordering a shirt to where it ends up. Clean and simple, but not very engaging yet.</p>
+                </div>
+            </div>
+            <div class="ff-process-step">
+                <div class="ff-step-left">
+                    <div class="ff-step-dot"></div>
+                    <div class="ff-step-connector"></div>
+                </div>
+                <div class="ff-process-content">
+                    <h2 class="ff-process-title">Feedback Meeting</h2>
+                    <p>After a meeting it became clear the story needed more interaction. Videos, scroll sections and moments where the user can choose what they want to explore.</p>
+                </div>
+            </div>
+            <div class="ff-process-step">
+                <div class="ff-step-left">
+                    <div class="ff-step-dot"></div>
+                    <div class="ff-step-connector"></div>
+                </div>
+                <div class="ff-process-content">
+                    <h2 class="ff-process-title">Storymap V2</h2>
+                    <p>The second version included video with voice-over, an interactive map and scrollable data sections. A much richer experience than the first version.</p>
+                </div>
+            </div>
+            <div class="ff-process-step">
+                <div class="ff-step-left">
+                    <div class="ff-step-dot"></div>
+                </div>
+                <div class="ff-process-content">
+                    <h2 class="ff-process-title">Prototype in Figma</h2>
+                    <p>The final result is a working prototype in Figma. I also used AI to generate video content as a new technique I picked up during this project.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="titel-prt">
+            <h1 class="ttmargin">multimedia story</h1>
+            <p class="xtrmargin">Check out the interactive story below. You can navigate through it just like the real experience.</p>
+            <p class="ff-load-notice xtrmargin">The story may take a moment to load. Turn your sound on for the full experience.</p>
+        </div>
+
+        <div class="brandboard-container">
+            <iframe
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FSifiK0oZcETO2eTnL6v0UU%2FUntitled%3Fnode-id%3D1-2%26p%3Df%26viewport%3D188%252C261%252C0.13%26t%3DY4KVjUsGaQUxzskd-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26starting-point-node-id%3D1%253A2%26page-id%3D0%253A1"
+                class="brandboard-embed"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </main>
+
+    <footer id="cc">
+        <div class="footer-container">
+          <p><strong>David Vonk</strong></p>
+          <p>📞 +31625598258</p>
+          <p>📧 <a href="mailto:davidvonk14@gmail.com">davidvonk14@gmail.com</a></p>
+          <p>📍 Landsruwe 2a, Voerendaal, Netherlands</p>
+        </div>
+      </footer>
+
+</body>
+</html>
